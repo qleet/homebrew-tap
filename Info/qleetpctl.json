@@ -1,0 +1,52 @@
+{
+  "name": "qleetpctl",
+  "full_name": "qleetpctl",
+  "tap": null,
+  "oldname": null,
+  "aliases": [],
+  "versioned_formulae": [],
+  "desc": "A CLI for managing the Qleet OS.",
+  "license": "MIT",
+  "homepage": "https://github.com/qleet/qleetctl",
+  "versions": {
+    "stable": "0.1.0",
+    "head": null,
+    "bottle": false
+  },
+  "urls": {
+    "stable": {
+      "url": "https://github.com/qleet/qleetctl/releases/download/v0.1.0/qleetctl_v0.1.0_macOS_x86_64.tar.gz",
+      "tag": null,
+      "revision": null,
+      "checksum": "652cc299c02f39d478e976faccd3bd30bebd1d24c1c10e25f219206c3404a7ae"
+    }
+  },
+  "revision": 0,
+  "version_scheme": 0,
+  "bottle": {},
+  "keg_only": false,
+  "keg_only_reason": null,
+  "options": [],
+  "build_dependencies": [],
+  "dependencies": [
+    "kubectl",
+    "kind"
+  ],
+  "test_dependencies": [],
+  "recommended_dependencies": [],
+  "optional_dependencies": [],
+  "uses_from_macos": [],
+  "requirements": [],
+  "conflicts_with": [],
+  "caveats": null,
+  "installed": [],
+  "linked_keg": null,
+  "pinned": false,
+  "outdated": false,
+  "deprecated": false,
+  "deprecation_date": null,
+  "deprecation_reason": null,
+  "disabled": false,
+  "disable_date": null,
+  "disable_reason": null
+}
