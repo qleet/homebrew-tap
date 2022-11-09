@@ -5,7 +5,7 @@
 class Qleetpctl < Formula
   desc "A CLI for managing the Qleet OS."
   homepage "https://github.com/qleet/qleetctl"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   depends_on "kubectl"
@@ -13,16 +13,16 @@ class Qleetpctl < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/qleet/qleetctl/releases/download/v0.1.0/qleetctl_v0.1.0_macOS_arm64.tar.gz"
-      sha256 "4ff6b46d50d6b9f624572aa62d8dcfef1be153e57565e0c4d01c3ccff8741429"
+      url "https://github.com/qleet/qleetctl/releases/download/v0.1.1/qleetctl_v0.1.1_macOS_arm64.tar.gz"
+      sha256 "e23f7f65b481f8b20cfd87280b1c2b5d266698a177ee6459ebc02533e8a36c2d"
 
       def install
         bin.install "qleetctl"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/qleet/qleetctl/releases/download/v0.1.0/qleetctl_v0.1.0_macOS_x86_64.tar.gz"
-      sha256 "652cc299c02f39d478e976faccd3bd30bebd1d24c1c10e25f219206c3404a7ae"
+      url "https://github.com/qleet/qleetctl/releases/download/v0.1.1/qleetctl_v0.1.1_macOS_x86_64.tar.gz"
+      sha256 "2d8f95ab3acedf87b6b900c07a0d93347d10f98e03ae7466552fff0339c85378"
 
       def install
         bin.install "qleetctl"
@@ -31,25 +31,25 @@ class Qleetpctl < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/qleet/qleetctl/releases/download/v0.1.0/qleetctl_v0.1.0_Linux_x86_64.tar.gz"
-      sha256 "7d5d4b002e7866e970f5224f0d446114ce94e7d487c1cff53cf36e5b91d9ce8d"
-
-      def install
-        bin.install "qleetctl"
-      end
-    end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/qleet/qleetctl/releases/download/v0.1.0/qleetctl_v0.1.0_Linux_arm.tar.gz"
-      sha256 "a74f91d0a50887b165221d31b8d9a1f842f0009e16c0d7fb0618b937b0454489"
+      url "https://github.com/qleet/qleetctl/releases/download/v0.1.1/qleetctl_v0.1.1_Linux_arm.tar.gz"
+      sha256 "8b80cdc41d82967b4b23c560ab0916dd3f71403f19fba19029b854a07660caa9"
 
       def install
         bin.install "qleetctl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/qleet/qleetctl/releases/download/v0.1.0/qleetctl_v0.1.0_Linux_arm64.tar.gz"
-      sha256 "900eb8763862a6253fcf0add67712cb73e824d1bf4a051c35c648a0088751ded"
+      url "https://github.com/qleet/qleetctl/releases/download/v0.1.1/qleetctl_v0.1.1_Linux_arm64.tar.gz"
+      sha256 "dac04eb28b638c7e5a563b92b9b5a8800856be207c2ec97fb52f6db18b22449a"
+
+      def install
+        bin.install "qleetctl"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "https://github.com/qleet/qleetctl/releases/download/v0.1.1/qleetctl_v0.1.1_Linux_x86_64.tar.gz"
+      sha256 "5cc84c9bf4fe4a537e185657ba0a582a23653c25c4dd14be491e09c73e1aefd2"
 
       def install
         bin.install "qleetctl"
