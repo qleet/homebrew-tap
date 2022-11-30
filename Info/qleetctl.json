@@ -9,16 +9,16 @@
   "license": "MIT",
   "homepage": "https://github.com/qleet/qleetctl",
   "versions": {
-    "stable": "0.1.5",
+    "stable": "0.1.6",
     "head": null,
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/qleet/qleetctl/releases/download/v0.1.5/qleetctl_v0.1.5_Darwin_x86_64.tar.gz",
+      "url": "https://github.com/qleet/qleetctl/releases/download/v0.1.6/qleetctl_v0.1.6_Darwin_x86_64.tar.gz",
       "tag": null,
       "revision": null,
-      "checksum": "6fe1366b648a4cd017f0196d3c90d95931d86682dcff4f0855687490b8e3155b"
+      "checksum": "f3b7821267041dc00feb6261e8e283713f6614936ea6f0722fb47072b656a988"
     }
   },
   "revision": 0,
