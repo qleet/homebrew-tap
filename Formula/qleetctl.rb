@@ -5,7 +5,7 @@
 class Qleetctl < Formula
   desc "A CLI for managing the Qleet OS."
   homepage "https://github.com/qleet/qleetctl"
-  version "0.1.14"
+  version "0.1.15"
   license "MIT"
 
   depends_on "kubectl"
@@ -15,8 +15,8 @@ class Qleetctl < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/qleet/qleetctl/releases/download/v0.1.14/qleetctl_v0.1.14_Darwin_x86_64.tar.gz"
-      sha256 "8ccf4dd5203968a7a0f1a8919de6638985d334efc0fd1b1e2dff16d1ddfd97c3"
+      url "https://github.com/qleet/qleetctl/releases/download/v0.1.15/qleetctl_v0.1.15_Darwin_x86_64.tar.gz"
+      sha256 "39604f75c342fd6aa9066c487b2282f91f21d148991d9bdfbee6c5fb743d9bc6"
 
       def install
         bin.install "qleetctl"
@@ -26,8 +26,8 @@ class Qleetctl < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/qleet/qleetctl/releases/download/v0.1.14/qleetctl_v0.1.14_Darwin_arm64.tar.gz"
-      sha256 "82444ec6176ef79597fac9f7bcdf30d4aed866d3e32ed6e25aa5af5cae86f669"
+      url "https://github.com/qleet/qleetctl/releases/download/v0.1.15/qleetctl_v0.1.15_Darwin_arm64.tar.gz"
+      sha256 "ee1f6a83def97b430ddf4720449796eebdd7ee270005a9489b3be48d3bff3cf2"
 
       def install
         bin.install "qleetctl"
@@ -40,8 +40,8 @@ class Qleetctl < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/qleet/qleetctl/releases/download/v0.1.14/qleetctl_v0.1.14_Linux_x86_64.tar.gz"
-      sha256 "56f1f81a4c4ff3c75cda9359c41bcfce3cd611c3aa3e753ef6c390b9f17fe3dc"
+      url "https://github.com/qleet/qleetctl/releases/download/v0.1.15/qleetctl_v0.1.15_Linux_x86_64.tar.gz"
+      sha256 "cd171512eff2bd8c3f49e5de517fea3616bacc627932cebc510d720889151003"
 
       def install
         bin.install "qleetctl"
@@ -51,8 +51,8 @@ class Qleetctl < Formula
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/qleet/qleetctl/releases/download/v0.1.14/qleetctl_v0.1.14_Linux_arm.tar.gz"
-      sha256 "ef513bb228d872895019da9f610c2791ebb28194af4bf0739eac3e2d0715256d"
+      url "https://github.com/qleet/qleetctl/releases/download/v0.1.15/qleetctl_v0.1.15_Linux_arm.tar.gz"
+      sha256 "5ee1a4cdbeb8e5c2c4a9edbc1460d4a32ae3294f378e24b91c8ad81f64b0770d"
 
       def install
         bin.install "qleetctl"
@@ -62,8 +62,8 @@ class Qleetctl < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/qleet/qleetctl/releases/download/v0.1.14/qleetctl_v0.1.14_Linux_arm64.tar.gz"
-      sha256 "f8a1782bccde92af9e188181a60c008242b5a88b71627bf01ff6576a53c041ce"
+      url "https://github.com/qleet/qleetctl/releases/download/v0.1.15/qleetctl_v0.1.15_Linux_arm64.tar.gz"
+      sha256 "3a1d8b60cefdbc83bbacc21bb2aaa691a408363cab0fcb5fcdef3d3971d923d7"
 
       def install
         bin.install "qleetctl"
