@@ -9,16 +9,16 @@
   "license": "MIT",
   "homepage": "https://github.com/qleet/qleetctl",
   "versions": {
-    "stable": "0.2.0",
+    "stable": "0.2.1",
     "head": null,
     "bottle": false
   },
   "urls": {
     "stable": {
-      "url": "https://github.com/qleet/qleetctl/releases/download/v0.2.0/qleetctl_v0.2.0_Darwin_x86_64.tar.gz",
+      "url": "https://github.com/qleet/qleetctl/releases/download/v0.2.1/qleetctl_v0.2.1_Darwin_x86_64.tar.gz",
       "tag": null,
       "revision": null,
-      "checksum": "ebaa89033f1252e6ee4f197a598a2529e292136e103e692234374f7bffb358e4"
+      "checksum": "932889cf61823f40f0c39e2ea8dab59576ea1e9027f9f4315710a089dbc34aa7"
     }
   },
   "revision": 0,
@@ -29,6 +29,7 @@
   "options": [],
   "build_dependencies": [],
   "dependencies": [
+    "docker",
     "kubectl",
     "kind",
     "wget",
